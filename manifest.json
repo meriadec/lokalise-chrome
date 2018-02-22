@@ -1,0 +1,20 @@
+{
+  "name": "Lokalise Helper",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Help you copy keys from Lokalise",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://lokalise.co/*",
+        "http://lokalise.co/*"
+      ],
+      "js": ["inject.js"]
+    }
+  ],
+  "permissions": [
+    "https://lokalise.co/*",
+    "http://lokalise.co/*",
+    "tabs"
+  ]
+}
